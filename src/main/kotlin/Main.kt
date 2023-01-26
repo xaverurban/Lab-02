@@ -20,7 +20,7 @@ fun main(args: Array<String>){
     whileWithList()
     workingWithStrings()
     workingWithTemplates()
-
+    nullSafety()
 }
 fun maxOf(a: Int, b: Int) =
     if (a > b) {
@@ -140,5 +140,11 @@ fun workingWithTemplates(){
     println("Expressions (cases): ${firstString.uppercase()} ${secondString.lowercase()}")
     println("Expressions (string size): first string is ${firstString.length}")
     println("Expressions (substring): ${firstString.substring(0,2)}")
+}
+
+fun nullSafety() {
+    var aString :String? = "abc"
+    val size = aString?.length   //now this is a syntax error
+    aString = null              //compiles
 }
 
