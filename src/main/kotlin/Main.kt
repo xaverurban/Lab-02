@@ -8,7 +8,7 @@ fun main(args: Array<String>){
     printRange(6);
     printExpressionResult(13,"15")
     printInferredType()
-    printAnimal("Cat")
+    printAnimal("elephant")
     println(describe(5))
     println(describe("Hello"))
     println(describe(100L))
